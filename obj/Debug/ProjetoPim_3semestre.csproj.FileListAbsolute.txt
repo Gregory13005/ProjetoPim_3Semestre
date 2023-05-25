@@ -6,3 +6,11 @@ C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoP
 C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3SemestreCodigoPrimeiro\ProjetoPim_3semestre\ProjetoPim_3semestre\obj\Debug\ProjetoPim_3semestre.csproj.CoreCompileInputs.cache
 C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3SemestreCodigoPrimeiro\ProjetoPim_3semestre\ProjetoPim_3semestre\obj\Debug\ProjetoPim_3semestre.exe
 C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3SemestreCodigoPrimeiro\ProjetoPim_3semestre\ProjetoPim_3semestre\obj\Debug\ProjetoPim_3semestre.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\bin\Debug\ProjetoPim_3semestre.exe.config
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\bin\Debug\ProjetoPim_3semestre.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\bin\Debug\ProjetoPim_3semestre.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\obj\Debug\ProjetoPim_3semestre.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\obj\Debug\ProjetoPim_3semestre.csproj.SuggestedBindingRedirects.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\obj\Debug\ProjetoPim_3semestre.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\obj\Debug\ProjetoPim_3semestre.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\Faculdade\Faculdade\Reposi c#\ProjetoPim_3Semestre\obj\Debug\ProjetoPim_3semestre.pdb

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
+using System.Data;
 
 namespace ProjetoPim_3semestre
 {
@@ -48,6 +49,7 @@ namespace ProjetoPim_3semestre
                     string option = Console.ReadLine();
                     if (option.ToUpper() == "1")
                     {
+                       
                         objValidador.CadastroU(login, senha);
                         Console.WriteLine("Usuário cadastrado com sucesso!");
                     }
@@ -69,67 +71,76 @@ namespace ProjetoPim_3semestre
                 Console.Clear();
                 //segunda parte do codigo começa a parti desse ponto...
 
-                string opcao;
+                bool continuarMenu = true;
 
-                Console.WriteLine("Digite a Opção Desejada:\n");
-                
-                Console.WriteLine("Opção 1: Reajuste Salarial: ");
-                Console.WriteLine("Opção 2: Calculo de Férias: ");
-                Console.WriteLine("Opção 3: Calculo de Decimo Terceiro: ");
-                Console.WriteLine("Opção 4: Recisão Contratual: ");
-                opcao = Console.ReadLine();
-
-                string nome, matricula;
-                double salario,reajuste ;
-
-                switch (opcao)
+                while (continuarMenu)
                 {
-                    case "1":
-                        Console.WriteLine("Voce Digitou Reajuste Salarial\n");
+                    Console.WriteLine("Digite a Opção Desejada:\n");
+                    Console.WriteLine("Opção 1: Reajuste Salarial: ");
+                    Console.WriteLine("Opção 2: Calculo de Férias: ");
+                    Console.WriteLine("Opção 3: Calculo de Decimo Terceiro: ");
+                    Console.WriteLine("Opção 4: Recisão Contratual: ");
+                    Console.WriteLine("Opção 5: Deseja Fechar o Programa?");
 
-                        Console.WriteLine("Digite o Nome do Colaborador: ");
-                        nome = Console.ReadLine();
-                        Console.WriteLine("Digite o Salario do Colaborador: ");
-                        salario = Double.Parse(Console.ReadLine());
-                        Console.WriteLine("Digite a Matricula do Colaborador:  ");
-                        matricula = Console.ReadLine();
+                    string opcao = Console.ReadLine();
 
-                        Console.WriteLine("Qual Séra o Valor do Reajuste em Porcentos?: ");
-                        reajuste = Double.Parse(Console.ReadLine());
+                    double salario = 0, reajuste = 0,salarion = 0; ;
 
-                        double salarion = 0;
+                    switch (opcao)
+                    {
+                        case "1":
+                            
+                            objReajuste.Meed(salario, reajuste, ref salarion);
+                            Console.WriteLine("O novo salario é: " + salarion);
+                            break;
 
-                        objReajuste.Meed(salario, reajuste,ref salarion);
+                        case "2":
+                            Console.WriteLine("Calculo de Férias");
+                            // Coloque aqui o código para executar a ação do caso 2
+                            break;
 
-                        Console.WriteLine("O novo salario é" + salarion);
+                        case "3":
+                            Console.WriteLine("Calculo de Decimo Terceiro");
+                            // Coloque aqui o código para executar a ação do caso 3
+                            break;
 
-                        break;
+                        case "4":
+                            Console.WriteLine("Recisão Contratual");
+                            // Coloque aqui o código para executar a ação do caso 4
+                            break;
+                       
+                        case "5":
+                            if (opcao == "5")
+                            {
+                                Environment.Exit(0);
+                            }
+                            break;
+                     
+                        default:
+                            Console.WriteLine("Opção inválida");
+                            // Coloque aqui o código para lidar com opções inválidas
+                            break;
+                    }
 
+                    Console.WriteLine("Deseja Visualizar o Dados, Se Sim Digite 1 ou 2 para Fechar: ");
+                    string v2 = Console.ReadLine();
 
-                        //aqui para por enquanto
-                    case "2":
-                        Console.WriteLine("Calculo de Férias");
-                        // Coloque aqui o código para executar a ação do caso 2
-                        break;
-                    case "3":
-                        Console.WriteLine("Calculo de Decimo Terceiro");
-                        break;
-                    case "4":
-                        Console.WriteLine("Recisão Contratual");
-                        break;
+                    if (v2 == "1")
+                    {
+                        Console.Clear();
 
+                        Console.WriteLine("\nEsses São os Dados do Colaborador: \n");
 
-                    default:
-                        Console.WriteLine("Opção inválida");
-                        // Coloque aqui o código para lidar com opções inválidas
-                        break;
+                        Console.WriteLine("O novo salario é: " + salarion);
+
+                    }
+                    else
+                    {                        
+                        continuarMenu = false;
+                    }
                 }
 
-
-
-
-
-                Console.ReadLine();
+                
             }
         }
 

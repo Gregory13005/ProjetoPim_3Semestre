@@ -24,22 +24,22 @@ namespace ProjetoPim_3semestre
 
         public void CadastroU(string login, string senha)
         {
-            string nome, matricula,numero;
             
+             string matricula;
 
             if (!users.ContainsKey(login))
             {
-                Console.WriteLine("Digite seu Nome:");
-               nome =  Console.ReadLine();
-                Console.WriteLine("Digite sua Matricula:");
+                Console.WriteLine("Digite seu Login: ");
+               login =  Console.ReadLine();
+                Console.WriteLine("Digite sua Matricula: ");
                matricula = Console.ReadLine() ;
-                Console.WriteLine("Digite seu Número(Apenas Números):");
-                numero = Console.ReadLine();
+                Console.WriteLine("Digite sua Senha: ");
+                senha = Console.ReadLine();
 
-                Console.WriteLine("Seus Dados São:");
-                Console.WriteLine("Nome:" + nome);
-                Console.WriteLine("Matricula:" + matricula);
-                Console.WriteLine("Número:" + numero);
+                Console.WriteLine("Seus Dados São: ");
+                Console.WriteLine("Nome: " + login);
+                Console.WriteLine("Matricula: " + matricula);
+                Console.WriteLine("Senha: " + senha);
 
 
 
