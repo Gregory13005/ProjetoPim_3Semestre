@@ -19,6 +19,9 @@ namespace ProjetoPim_3semestre
         {
             Validador objValidador = new Validador();
             Reajuste objReajuste = new Reajuste();
+            Decimo objDecimo = new Decimo();
+            Ferias objFerias = new Ferias();
+
             
             bool isRunning = true;
 
@@ -84,29 +87,32 @@ namespace ProjetoPim_3semestre
 
                     string opcao = Console.ReadLine();
 
-                    double salario = 0, reajuste = 0,salarion = 0; ;
-
+                    double salario = '', reajuste = '',salarion = ''; ;
+                   
                     switch (opcao)
                     {
                         case "1":
                             
                             objReajuste.Meed(salario, reajuste, ref salarion);
-                            Console.WriteLine("O novo salario é: " + salarion);
-                            break;
+                            Console.WriteLine("O novo salario é: " + salarion);                         
 
                         case "2":
-                            Console.WriteLine("Calculo de Férias");
-                            // Coloque aqui o código para executar a ação do caso 2
+                            objFerias.Clferias(salario, ref vltotal);
+                            Console.WriteLine("Calculo de Férias: " + vltotal);
+                            
                             break;
 
                         case "3":
-                            Console.WriteLine("Calculo de Decimo Terceiro");
-                            // Coloque aqui o código para executar a ação do caso 3
+                            objDecimo.terceiro(salario, ref clterceiro);
+                            Console.WriteLine("Calculo de Decimo Terceiro: " + clterceiro);
+                            
                             break;
 
                         case "4":
+
+                            objRecisao.Clrecisao(salario, ref clrecisao);
                             Console.WriteLine("Recisão Contratual");
-                            // Coloque aqui o código para executar a ação do caso 4
+                            
                             break;
                        
                         case "5":
@@ -121,23 +127,27 @@ namespace ProjetoPim_3semestre
                             // Coloque aqui o código para lidar com opções inválidas
                             break;
                     }
-
-                    Console.WriteLine("Deseja Visualizar o Dados, Se Sim Digite 1 ou 2 para Fechar: ");
-                    string v2 = Console.ReadLine();
-
                     if (v2 == "1")
                     {
                         Console.Clear();
 
                         Console.WriteLine("\nEsses São os Dados do Colaborador: \n");
-
+                        Console.WriteLine("Nome do Colaborador: " + vnome);
+                        Console.WriteLine("Matricula do Colaborador: " + vmatricula);
                         Console.WriteLine("O novo salario é: " + salarion);
+                        Console.WriteLine("Calculo de Salário: " + );
 
                     }
                     else
-                    {                        
+                    {
                         continuarMenu = false;
                     }
+                    break;
+
+                    Console.WriteLine("Deseja Visualizar o Dados, Se Sim Digite 1 ou 2 para Fechar: ");
+                    string v2 = Console.ReadLine();
+
+                   
                 }
 
                 
