@@ -36,7 +36,9 @@ namespace ProjetoPim_3semestre
                 Console.WriteLine("Digite sua Senha: ");
                 senha = Console.ReadLine();
 
-                Console.WriteLine("Seus Dados São: ");
+                Console.Clear();
+
+                Console.WriteLine("Seus Dados São: \n");
                 Console.WriteLine("Nome: " + login);
                 Console.WriteLine("Matricula: " + matricula);
                 Console.WriteLine("Senha: " + senha);

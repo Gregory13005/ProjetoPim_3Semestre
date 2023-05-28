@@ -13,7 +13,7 @@ namespace ProjetoPim_3semestre
             Console.Clear();
             double slanual,pripar, segupar;
             int meses;
-            Console.WriteLine("Digite o Salario do Colaborador: ");
+            Console.WriteLine("Digite o Salário do Colaborador: ");
             salario = Double.Parse(Console.ReadLine());
             Console.WriteLine("Digite o número de meses que o Colaborador trabalhou: ");
             meses = int.Parse(Console.ReadLine());

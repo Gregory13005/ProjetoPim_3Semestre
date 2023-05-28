@@ -15,7 +15,7 @@ namespace ProjetoPim_3semestre
             string nome,matricula;
 
            
-            Console.WriteLine("Digite o Salario do Colaborador: ");
+            Console.WriteLine("Digite o Salário do Colaborador: ");
             salario = Double.Parse(Console.ReadLine());
            
 
