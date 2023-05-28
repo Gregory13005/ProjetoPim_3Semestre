@@ -10,6 +10,7 @@ namespace ProjetoPim_3semestre
     {
         public double Meed(double salario, double reajuste,ref double salarion)
         {
+            Console.Clear();
             string nome, matricula;
 
             Console.WriteLine("Voce Digitou Reajuste Salárial...\n");

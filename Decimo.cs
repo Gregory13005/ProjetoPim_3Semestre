@@ -10,6 +10,7 @@ namespace ProjetoPim_3semestre
     {
         public double terceiro(double salario, ref double clterceiro)
         {
+            Console.Clear();
             double slanual,pripar, segupar;
             int meses;
             Console.WriteLine("Digite o Salario do Colaborador: ");

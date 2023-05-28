@@ -10,7 +10,7 @@ namespace ProjetoPim_3semestre
     {
         public double Clferias(double salario,ref double vltotal)
         {
-            
+            Console.Clear();
             double sldiario = 0,rmferias = 0;
             string nome,matricula;
 

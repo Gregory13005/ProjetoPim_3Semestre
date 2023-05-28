@@ -11,7 +11,7 @@ namespace ProjetoPim_3semestre
 {
     class Program
     {
-    
+    Ouqe nao funciona e esse aqui
         static Dictionary<string, string> users = new Dictionary<string, string>();
         
 
@@ -21,8 +21,11 @@ namespace ProjetoPim_3semestre
             Reajuste objReajuste = new Reajuste();
             Decimo objDecimo = new Decimo();
             Ferias objFerias = new Ferias();
+            Recisao objRecisao = new Recisao();
 
             
+            
+
             bool isRunning = true;
 
             while (isRunning)
@@ -32,6 +35,7 @@ namespace ProjetoPim_3semestre
                 Console.WriteLine("|  Software de Gestão de Rh   |");
                 Console.WriteLine("|_____________________________|");
 
+                
 
                 Console.WriteLine("\nVamos Começar?\n");
                 Console.Write("Digite o seu login: ");
@@ -70,6 +74,7 @@ namespace ProjetoPim_3semestre
                     isRunning = false;
                     break;
                 }
+                else {}
                 
                 Console.Clear();
                 //segunda parte do codigo começa a parti desse ponto...
@@ -85,14 +90,17 @@ namespace ProjetoPim_3semestre
                     Console.WriteLine("Opção 4: Recisão Contratual: ");
                     Console.WriteLine("Opção 5: Deseja Fechar o Programa?");
 
-                    string opcao = Console.ReadLine();
+                    int opcao = Console.ReadLine();      
+                    
+                    double salario = '', reajuste = '',salarion = ''; 
 
-                    double salario = '', reajuste = '',salarion = ''; ;
-                   
+                    
+
                     switch (opcao)
                     {
                         case "1":
-                            
+                          
+
                             objReajuste.Meed(salario, reajuste, ref salarion);
                             Console.WriteLine("O novo salario é: " + salarion);                         
 
@@ -109,10 +117,10 @@ namespace ProjetoPim_3semestre
                             break;
 
                         case "4":
-
-                            objRecisao.Clrecisao(salario, ref clrecisao);
-                            Console.WriteLine("Recisão Contratual");
                             
+                            objRecisao.Clrecisao(salario, ref AvisoPrevio);
+                            Console.WriteLine("O valor da Recisão do Colaborador È R$" + AvisoPrevio);
+
                             break;
                        
                         case "5":
@@ -124,28 +132,14 @@ namespace ProjetoPim_3semestre
                      
                         default:
                             Console.WriteLine("Opção inválida");
-                            // Coloque aqui o código para lidar com opções inválidas
+                            
                             break;
                     }
-                    if (v2 == "1")
-                    {
-                        Console.Clear();
 
-                        Console.WriteLine("\nEsses São os Dados do Colaborador: \n");
-                        Console.WriteLine("Nome do Colaborador: " + vnome);
-                        Console.WriteLine("Matricula do Colaborador: " + vmatricula);
-                        Console.WriteLine("O novo salario é: " + salarion);
-                        Console.WriteLine("Calculo de Salário: " + );
+                    s
 
-                    }
-                    else
-                    {
-                        continuarMenu = false;
-                    }
-                    break;
-
-                    Console.WriteLine("Deseja Visualizar o Dados, Se Sim Digite 1 ou 2 para Fechar: ");
-                    string v2 = Console.ReadLine();
+                   
+                  
 
                    
                 }
