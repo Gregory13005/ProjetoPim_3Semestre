@@ -8,9 +8,19 @@ namespace ProjetoPim_3semestre
 {
     public class Ferias
     {
-        public double Clferias(double salario,ref double vltotal)
+        public double vacation(double salario, ref double vltotal)
         {
             Console.Clear();
+
+            double vtotal = 1;
+            vltotal = Clferias(salario, vtotal);
+
+            return vltotal;
+        }
+        
+        private double Clferias(double salario, double vtotal)
+        {
+            
             double sldiario = 0,rmferias = 0;
             string nome,matricula;
 
@@ -23,11 +33,11 @@ namespace ProjetoPim_3semestre
 
             rmferias = sldiario * 30;
 
-            vltotal = rmferias + (rmferias / 3);
+            vtotal = rmferias + (rmferias / 3);
 
 
 
-            return vltotal;
+            return vtotal;
         }
 
     }

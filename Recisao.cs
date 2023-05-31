@@ -8,7 +8,15 @@ namespace ProjetoPim_3semestre
 {
     public class Recisao
     {
-        public double Clrecisao(double salario, ref double AvisoPrevio)
+        public double miid(double salario, ref double VlRecisao)
+        {
+            double vlRecisao = 0;
+            VlRecisao = Clrecisao(salario,vlRecisao);
+
+            return VlRecisao;
+        }
+
+        private double Clrecisao(double salario,  double vlRecisao)
         {
             Console.Clear();
 
@@ -51,10 +59,10 @@ namespace ProjetoPim_3semestre
             }
             else { }
 
-            AvisoPrevio = vltotal + FerPro + DecPro; 
-            
+            vlRecisao = vltotal + FerPro + DecPro;
 
-                return AvisoPrevio;
+
+            return vlRecisao;
         }
 
     }
