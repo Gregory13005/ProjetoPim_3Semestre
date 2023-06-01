@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProjetoPim_3semestre
 {
-    public class Recisao
+    public class Rescisao
     {
         public double miid(double salario, ref double VlRecisao)
         {
-            double vlRecisao = 0;
-            VlRecisao = Clrecisao(salario,vlRecisao);
+            double vlRescisao = 0;
+            VlRecisao = Clrescisao(salario,vlRescisao);
 
             return VlRecisao;
         }
 
-        private double Clrecisao(double salario,  double vlRecisao)
+        private double Clrescisao(double salario,  double vlRescisao)
         {
             Console.Clear();
 
@@ -59,10 +59,10 @@ namespace ProjetoPim_3semestre
             }
             else { }
 
-            vlRecisao = vltotal + FerPro + DecPro;
+            vlRescisao = vltotal + FerPro + DecPro;
 
 
-            return vlRecisao;
+            return vlRescisao;
         }
 
     }
